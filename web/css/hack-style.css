@@ -1,0 +1,32 @@
+body {
+	font-family: 'Gentium Book Basic', serif;
+}
+
+h1,h2,h3,h4,h5 {
+	font-family: 'Libre Baskerville', serif;
+	letter-spacing: 1px;
+	font-weight: 400;
+}
+
+.btn {
+	font-family: 'Gentium Book Basic', serif;
+}
+
+
+.fh5co-cover .fh5co-cover-text .cover-text-lead {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+}
+
+.fh5co-cover .fh5co-cover-text .cover-text-sublead {
+
+    font-family: 'Gentium Book Basic', serif;
+}
+
+.fh5co-counter-style-1 .fh5co-counter-label, .fh5co-counter-style-2 .fh5co-counter-label {
+    font-family: 'Gentium Book Basic', serif;
+}
+
+.scroll-btn {
+    bottom: 35px;
+}
