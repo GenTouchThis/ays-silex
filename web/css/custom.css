@@ -1,0 +1,85 @@
+body, button, span.date_label, .timeline_items li h3 span, input[type="submit"], input[type="reset"], input[type="button"], input[type="text"], input[type="password"], input[type="tel"], input[type="email"], textarea, select, .offer_li .title h3 {
+	font-family: 'Libre Baskerville', serif;
+}
+#menu>ul>li>a, .action_button, #overlay-menu ul li a {
+	font-family: 'Libre Baskerville', serif;
+}
+#Subheader .title {
+	font-family: 'Libre Baskerville', serif;
+}
+h1, h2, h3, h4, .text-logo #logo {
+	font-family: 'Libre Baskerville', serif;
+	color: #005773;
+}
+h5, h6 {
+	font-family: 'Libre Baskerville', serif;
+	color: #005773;
+}
+blockquote {
+	font-family: 'Libre Baskerville', serif;
+}
+
+#Subheader .title {
+    text-decoration: none;
+    color: #005773;
+}
+
+h2 {
+	text-decoration: none;
+	color: #005773;
+}
+.chart_box .chart .num, .counter .desc_wrapper .number-wrapper, .how_it_works .image .number, .pricing-box .plan-header .price, .quick_fact .number-wrapper, .woocommerce .product div.entry-summary .price {
+	font-family: 'Libre Baskerville', serif;
+}
+
+#Top_bar .menu > li > a, #Top_bar #menu ul li.submenu .menu-toggle {
+    color: rgb(9, 105, 135)
+}
+
+#Top_bar .menu>li.current-menu-item>a, #Top_bar .menu>li.current_page_item>a, #Top_bar .menu>li.current-menu-parent>a, #Top_bar .menu>li.current-page-parent>a, #Top_bar .menu>li.current-menu-ancestor>a, #Top_bar .menu>li.current-page-ancestor>a, #Top_bar .menu>li.current_page_ancestor>a, #Top_bar .menu>li.hover>a {
+	color: #6AA2B8;
+}
+
+#Top_bar .menu>li a:after {
+    background: #94c100;
+}
+
+#Side_slide {
+    background-color: #042630;
+    border-color: #042630;
+}
+
+#Footer h1, #Footer h1 a, #Footer h1 a:hover, #Footer h2, #Footer h2 a, #Footer h2 a:hover, #Footer h3, #Footer h3 a, #Footer h3 a:hover, #Footer h4, #Footer h4 a, #Footer h4 a:hover, #Footer h5, #Footer h5 a, #Footer h5 a:hover, #Footer h6, #Footer h6 a, #Footer h6 a:hover {
+    color: #005773;
+}
+
+.fancy {
+  
+  text-align: center;
+}
+.fancy span {
+    line-height: 0.5;
+    font-size: 24px;
+    display: inline-block;
+    position: relative; 
+    color: #017397; 
+    padding-bottom: 17px;
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid #017397;
+  border-top: 1px solid #017397;
+  top: 0;
+  width: 400px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}

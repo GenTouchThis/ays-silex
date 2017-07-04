@@ -1,4 +1,30 @@
-<li class="active"><a href="#">Tour</a></li>
-<li><a href="{{url('nosotros')}}">Nosotros</a></li>
-<li><a href="{{url('menu')}}">Nuestro Menú</a></li>
-<li><a href="{{url('contactenos')}}">Contáctenos</a></li>
+<div class="logo">
+    <a id="logo" href="{{url('inicio')}}" title="Agua & Sal - Cebichería"><img class="logo-main scale-with-grid" src="{{asset('images/restaurant2.png')}}" alt="Agua & Sal" /><img class="logo-sticky scale-with-grid" src="{{asset('images/restaurant2.png')}}" alt="Agua & Sal" /><img class="logo-mobile scale-with-grid" src="{{asset('images/restaurant2.png')}}" alt="Agua & Sal" /><img class="logo-mobile-sticky scale-with-grid" src="{{asset('images/restaurant2.png')}}" alt="Agua & Sal" />
+    </a>
+</div>
+<div class="menu_wrapper">
+    <nav id="menu">
+        <ul id="menu-main-menu-left" class="menu menu_left">
+            <li {% if active == 'inicio' %} class="current_page_item"{% endif %}>
+                <a href="{{url('inicio')}}"><span>Home</span></a>
+            </li>
+            <li {% if active == 'nosotros' %} class="current_page_item"{% endif %}>
+                <a href="{{url('nosotros')}}"><span>Nosotros</span></a>
+            </li>
+            <li {% if active == 'especialidades' %} class="current_page_item"{% endif %}>
+                <a href="{{url('especialidades')}}"><span>Especialidades</span></a>
+            </li>
+        </ul>
+        <ul id="menu-main-menu-right" class="menu menu_right">
+            <li {% if active == 'menu' %} class="current_page_item"{% endif %}>
+                <a href="{{url('menu')}}"><span>Menu</span></a>
+            </li>
+            <li  {% if active == 'testimoniales' %} class="current_page_item"{% endif %}>
+                <a href="{{url('inicio')}}"><span>Testimoniales</span></a>
+            </li>
+            <li {% if active == 'contactenos' %} class="current_page_item"{% endif %}>
+                <a href="{{url('contactenos')}}"><span>Contéctenos</span></a>
+            </li>
+        </ul>
+    </nav><a class="responsive-menu-toggle " href="#"><i class="icon-menu-fine"></i></a>
+</div>

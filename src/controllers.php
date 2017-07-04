@@ -10,19 +10,31 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 $app->get('/', function () use ($app) {
     return $app['twig']->render('pages/index.html.twig', array());
-})->bind('homepage');
+})->bind('inicio');
 
 $app->get('/nosotros', function () use ($app) {
     return $app['twig']->render('pages/nosotros.html.twig', array());
 })->bind('nosotros');
 
+$app->get('/especialidades', function () use ($app) {
+    return $app['twig']->render('pages/especialidades.html.twig', array());
+})->bind('especialidades');
+
 $app->get('/menu', function () use ($app) {
     return $app['twig']->render('pages/menu.html.twig', array());
 })->bind('menu');
 
+$app->get('/testimoniales', function () use ($app) {
+    return $app['twig']->render('pages/testimoniales.html.twig', array());
+})->bind('testimoniales');
+
 $app->get('/contactenos', function () use ($app) {
-    return $app['twig']->render('pages/contacto.html.twig', array());
+    return $app['twig']->render('pages/contactenos.html.twig', array());
 })->bind('contactenos');
+
+$app->before(function ($request) use ($app) {
+    $app['twig']->addGlobal('active', $request->get("_route"));
+});
 
 $app->error(function (\Exception $e, Request $request, $code) use ($app) {
     if ($app['debug']) {
