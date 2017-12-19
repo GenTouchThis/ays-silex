@@ -1,0 +1,631 @@
+{% extends "layout.html.twig" %}
+{% block content %}
+	<div id="Header_wrapper">
+        <header id="Header">
+            <div class="header_placeholder"></div>
+            <div id="Top_bar">
+                <div class="container">
+                    <div class="column one">
+                        <div class="top_bar_left clearfix">
+                            {{ include('nav.html.twig') }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div id="Content">
+        <div class="content_wrapper clearfix">
+            <div class="sections_group">
+                <div class="entry-content">
+                    <div class="section mcb-section" style="padding-top:110px; padding-bottom:70px; background-image:url('{{asset('images/ays-gal/menu-bg-001.jpg')}}'); background-repeat:no-repeat; background-position:center top; background-size: cover; background-attachment: fixed;">
+                        <div class="section_wrapper mcb-section-inner">
+                            <div class="wrap mcb-wrap one  valign-top clearfix">
+                                <div class="mcb-wrap-inner">
+                                    <div class="column mcb-column one column_column ">
+                                        <div class="column_attr clearfix align_center">
+                                            <h6 style="letter-spacing: 4px;">Agua & Sal | Cocina Latinoaméricana del Mar</h6>
+                                            <h2>Galería de Nuestros Platillos</h2>
+                                        </div>
+                                        <div class="section section-filters">
+                                            <div class="section_wrapper clearfix">
+                                                <!--  Filter Area -->
+                                                <div id="Filters" class="column one isotope-filters">
+                                                    <ul class="filters_buttons">
+                                                        <li class="label">
+                                                            Filtrar por
+                                                        </li>
+                                                        <li class="categories">
+                                                            <a class="open" href="#"><i class="icon-docs"></i>Categorias<i class="icon-down-dir"></i></a>
+                                                        </li>
+                                                        <li class="reset">
+                                                            <a class="close" data-rel="*" href="my-showcase.html"><i class="icon-cancel"></i> Mostrar Todas</a>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="filters_wrapper" data-cat="">
+                                                        <ul class="categories">
+                                                            <li class="cebiches">
+                                                                <a data-rel=".cebiches" href="#">Cebiches</a>
+                                                            </li>
+                                                            <li class="ensaladas">
+                                                                <a data-rel=".ensaladas" href="#">Ensaladas</a>
+                                                            </li>
+                                                            <li class="calientes">
+                                                                <a data-rel=".calientes" href="#">Entradas Calientes</a>
+                                                            </li>
+                                                            <li class="sopas">
+                                                                <a data-rel=".sopas" href="#">Sopas</a>
+                                                            </li>
+                                                            <li class="frias">
+                                                                <a data-rel=".frias" href="#">Entradas Frías</a>
+                                                            </li>
+                                                            <li class="fuertes">
+                                                                <a data-rel=".fuertes" href="#">Platos Fuertes</a>
+                                                            </li>
+                                                            <li class="fuertes">
+                                                                <a data-rel=".restaurant" href="#">Restaurant</a>
+                                                            </li>
+                                                            <li class="close">
+                                                                <a href="#"><i class="icon-cancel"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column mcb-column one column_portfolio portfolio_heading">
+                                        <div class="column_filters">
+                                            <div class="portfolio_wrapper isotope_wrapper">
+                                                <ul class="portfolio_group lm_wrapper isotope masonry col-3 masonry-hover">
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail fuertes">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-dark" style=" background-color:rgba(0, 129, 168, .7);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Trucha con Miso</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom" href="{{asset('images/galeria/ays-001.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="single-project-10.html">
+                                                                    <img src="{{asset('images/galeria/ays-001.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail frias">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-dark" style=" background-color:rgba(0, 129, 168, .7);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Tiradito de Hiramasa</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom" href="{{asset('images/galeria/ays-002n.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="portfolio-single-1.html"><img src="{{asset('images/galeria/ays-002n.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail cebiches">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-light" style=" background-color:rgba(0, 129, 168, .7);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Cebiche a la Leña</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom" href="{{asset('images/galeria/ays-003.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="portfolio-single-2.html"><img src="{{asset('images/galeria/ays-003.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail cebiches">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-dark" style=" background-color:rgba(0, 129, 168, .7);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Cebiche Tatemado</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom" href="{{asset('images/galeria/ays-004.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="portfolio-single-2.html"><img src="{{asset('images/galeria/ays-004.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail frias">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-light" style=" background-color:rgba(29, 233, 182, .7);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Aguachile de Camarón</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom" href="{{asset('images/galeria/ays-005.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="single-project-1.html"><img src="{{asset('images/galeria/ays-005.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail ensalada">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-light" style=" background-color:rgba(67, 160, 71, .7);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Ensalada de Betabel</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom" href="{{asset('images/galeria/ays-006new.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="single-project-2.html"><img src="{{asset('images/galeria/ays-006new.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail frias">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-light" style=" background-color:rgba(71, 79, 90, 0.9);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Pulpo Enamorado</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom" href="{{asset('images/galeria/ays-007.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="single-project-3.html"><img src="{{asset('images/galeria/ays-007.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail cebiches">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-dark" style=" background-color:rgba(0, 129, 168, .7);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Cebiche Tropical</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom" href="{{asset('images/galeria/ays-008.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="single-project-4.html"><img src="{{asset('images/galeria/ays-008.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail cebiches">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-dark" style=" background-color:rgba(0, 129, 168, .7);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Cebiche Verde</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom" href="{{asset('images/galeria/ays-009.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="single-project-4.html"><img src="{{asset('images/galeria/ays-009.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail cebiches">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-dark" style=" background-color:rgba(0, 129, 168, .7);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Cebiche Peruano</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom" href="{{asset('images/galeria/ays-0010.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="single-project-4.html"><img src="{{asset('images/galeria/ays-0010.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail cebiches">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-dark" style=" background-color:rgba(0, 129, 168, .7);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Cebiche a la Mandarina</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom" href="{{asset('images/galeria/ays-0011.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="single-project-4.html"><img src="{{asset('images/galeria/ays-0011.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail frias">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-dark" style=" background-color:rgba(0, 129, 168, .7);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Vuelve a la Vida</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom" href="{{asset('images/galeria/ays-0012.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="single-project-4.html"><img src="{{asset('images/galeria/ays-0012.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail calientes">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-dark" style=" background-color:rgba(0, 129, 168, .7);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Esquites con Camarón</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom" href="{{asset('images/galeria/ays-0013n.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="single-project-4.html"><img src="{{asset('images/galeria/ays-0013n.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail sopas">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-dark" style=" background-color:rgba(0, 129, 168, .7);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Fideo Seco con Camarones</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom" href="{{asset('images/galeria/ays-0014.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="single-project-4.html"><img src="{{asset('images/galeria/ays-0014.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail calientes">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-dark" style=" background-color:rgba(0, 129, 168, .7);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Chicharrón de Calamar</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom" href="{{asset('images/galeria/ays-0015.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="single-project-4.html"><img src="{{asset('images/galeria/ays-0015.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail fuertes">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-dark" style=" background-color:rgba(0, 129, 168, .7);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Arroz con Mariscos</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom" href="{{asset('images/galeria/ays-0016.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="single-project-4.html"><img src="{{asset('images/galeria/ays-0016.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail fuertes">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-dark" style=" background-color:rgba(0, 129, 168, .7);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Hamburguesa de Mariscos</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom" href="{{asset('images/galeria/ays-0017.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="single-project-4.html"><img src="{{asset('images/galeria/ays-0017.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail calientes">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-dark" style=" background-color:rgba(0, 129, 168, .7);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Tacos del Pacifico</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom" href="{{asset('images/galeria/ays-0018.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="single-project-4.html"><img src="{{asset('images/galeria/ays-0018.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail cebiches">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-dark" style=" background-color:rgba(0, 129, 168, .7);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Cebiche Chilango</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom" href="{{asset('images/galeria/ays-0019.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="single-project-4.html"><img src="{{asset('images/galeria/ays-0019.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail cebiches">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-dark" style=" background-color:rgba(0, 129, 168, .7);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Cebiche Pulpo</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom" href="{{asset('images/galeria/ays-0020.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="single-project-4.html"><img src="{{asset('images/galeria/ays-0020.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail calientes">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-dark" style=" background-color:rgba(0, 129, 168, .7);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Pulpito a la Parrilla</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom" href="{{asset('images/galeria/ays-0021.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="single-project-4.html"><img src="{{asset('images/galeria/ays-0021.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail cebiches">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-dark" style=" background-color:rgba(0, 129, 168, .7);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Degustación de Cebiches</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom" href="{{asset('images/galeria/ays-0022.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="single-project-4.html"><img src="{{asset('images/galeria/ays-0022.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail frias">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-dark" style=" background-color:rgba(0, 129, 168, .7);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Tostadas de Marlin</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom" href="{{asset('images/galeria/ays-0023.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="single-project-4.html"><img src="{{asset('images/galeria/ays-0023.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail frias">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-dark" style=" background-color:rgba(0, 129, 168, .7);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Poke de Atún</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom" href="{{asset('images/galeria/ays-0024.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="single-project-4.html"><img src="{{asset('images/galeria/ays-0024.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail ensaladas">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-dark" style=" background-color:rgba(0, 129, 168, .7);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Ensalada de Pulpo</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom" href="{{asset('images/galeria/ays-0025.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="single-project-4.html"><img src="{{asset('images/galeria/ays-0025.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail ensalada">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-dark" style=" background-color:rgba(0, 129, 168, .7);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Ensalada de Atún</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom" href="{{asset('images/galeria/ays-0026.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="single-project-4.html"><img src="{{asset('images/galeria/ays-0026.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail calientes">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-dark" style=" background-color:rgba(0, 129, 168, .7);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Mejillones</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom" href="{{asset('images/galeria/ays-0027.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="single-project-4.html"><img src="{{asset('images/galeria/ays-0027.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail fuertes">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-dark" style=" background-color:rgba(0, 129, 168, .7);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Plancha del Mar</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom" href="{{asset('images/galeria/ays-0028.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="single-project-4.html"><img src="{{asset('images/galeria/ays-0028.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail cebiches">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-dark" style=" background-color:rgba(0, 129, 168, .7);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Cebiche Mixto</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom" href="{{asset('images/galeria/ays-0029.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="single-project-4.html"><img src="{{asset('images/galeria/ays-0029.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail cebiches">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-dark" style=" background-color:rgba(0, 129, 168, .7);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Cebiche de Atún</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom" href="{{asset('images/galeria/ays-0030.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="single-project-4.html"><img src="{{asset('images/galeria/ays-0030.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail fuertes">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-dark" style=" background-color:rgba(0, 129, 168, .7);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Pescado en Salsa de Frijol</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom pescado" href="{{asset('images/galeria/ays-0031.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="single-project-4.html"><img src="{{asset('images/galeria/ays-0031.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block js %}
+	<script src="{{asset('js/jquery-2.1.4.min.js')}}"></script>
+
+    <script src="{{asset('js/mfn.menu.js')}}"></script>
+    <script src="{{asset('js/jquery.plugins.js')}}"></script>
+    <script src="{{asset('js/jquery.jplayer.min.js')}}"></script>
+    <script src="{{asset('js/animations/animations.js')}}"></script>
+    <script src="{{asset('js/translate3d.js')}}"></script>
+    <script src="{{asset('js/scripts.js')}}"></script>
+
+
+{% endblock %}

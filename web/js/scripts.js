@@ -1587,12 +1587,70 @@ function mfn_carouFredSel_height() {
 
 	
 function mfnSliderContent(){
+	
+	$('.content_slider_ul').each(function(){
+if($(this).hasClass("carouFredSel")){
+			if( $(this).closest('.content_slider').hasClass('carousel') ){
+				var style = { min:1, max:6};
+			} else {
+				var style = 1;
+			}
+
+			// Init carouFredSel
+			$( this ).carouFredSel({
+				circular	: true,
+				responsive	: true,
+				items		: {
+					width	: 380,
+					visible	: style
+				},
+				scroll		: {
+					duration	: 500,
+					easing		: 'swing'
+				},
+				prev        : {
+					button		: function(){
+						return $(this).closest('.content_slider').find('.slider_prev');
+					}
+				},
+				next        : {
+					button		: function(){
+						return $(this).closest('.content_slider').find('.slider_next');
+					}
+				},
+				pagination	: {
+					container	: function(){
+						return $(this).closest('.content_slider').find('.slider_pagination');
+					}
+				},
+				auto		: {
+					play			: window.mfn_sliders.slider ? true : false,
+					timeoutDuration	: window.mfn_sliders.slider ? window.mfn_sliders.slider : 2500,
+				},
+				swipe		: {
+					onTouch		: true,
+					onMouse		: true,
+					onBefore	: function(){
+						$(this).find('a').addClass('disable');
+						$(this).find('li').trigger('mouseleave');
+					},
+					onAfter		: function(){
+						$(this).find('a').removeClass('disable');
+					}
+				}
+			});
+			
+			// Disable accidental clicks while swiping
+			$(this).on('click', 'a.disable', function() {
+				return false; 
+			});
+		}else{
+	
 		
 		var pager = function( el, i ){
 	        return '<a>'+ i +'</a>';
 	    };
-	    
-		$('.content_slider_ul').each(function(){
+
 
 			var slider 		= $(this);	
 			var count 		= 1;
@@ -1671,9 +1729,10 @@ if(slider.siblings( '.slider_prev' ).length){
 			
 			
 			
-		});
-	}
 	
+	}
+});
+	}
 	
 /*function mfnSliderContent() {
 	jQuery('.content_slider_ul').each(function() {

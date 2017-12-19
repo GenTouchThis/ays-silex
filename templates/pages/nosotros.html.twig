@@ -1,135 +1,276 @@
 {% extends "layout.html.twig" %}
 {% block content %}
-<div id="Header_wrapper">
-    <header id="Header">
-        <div class="header_placeholder"></div>
-        <div id="Top_bar">
-            <div class="container">
-                <div class="column one">
-                    <div class="top_bar_left clearfix">
-                        {{ include('nav.html.twig') }}
+    <div id="Header_wrapper">
+        <header id="Header">
+            <div class="header_placeholder"></div>
+            <div id="Top_bar">
+                <div class="container">
+                    <div class="column one">
+                        <div class="top_bar_left clearfix">
+                            {{ include('nav.html.twig') }}
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="mfn-main-slider" id="mfn-rev-slider">
-            <div id="rev_slider_2_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-source="gallery" style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
-                <div id="rev_slider_2_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.3.1.5">
-                    <ul>
-                        <li data-index="rs-5" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                            <img src="{{asset('images/home_restaurant2_about_slider1.jpg')}}" alt="" title="home_restaurant2_about_slider1" width="1920" height="700" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
-                        </li>
-                        <li data-index="rs-6" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                            <img src="{{asset('images/home_restaurant2_about_slider2.jpg')}}" alt="" title="home_restaurant2_about_slider2" width="1920" height="700" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
-                        </li>
-                    </ul>
-                    <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
-                </div>
+            <div class="mfn-main-slider" id="mfn-rev-slider">
+                <div id="rev_slider_2_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-source="gallery" style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+                    <div id="rev_slider_2_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.3.1.5">
+                        <ul>
+                            <li data-index="rs-7" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                                <img src="{{asset('images/ays-gal/ays-slider-004.jpg')}}" alt="" title="home_restaurant2_about_slider2" width="1920" height="700" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
+                            </li>
+                            <li data-index="rs-5" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                                <img src="{{asset('images/ays-gal/ays-slider-003.jpg')}}" alt="" title="home_restaurant2_about_slider1" width="1920" height="700" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
+                            </li>
+                            <li data-index="rs-6" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                                <img src="{{asset('images/ays-gal/ays-slider-002.jpg')}}" alt="" title="home_restaurant2_about_slider2" width="1920" height="700" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
+                            </li>
+                        </ul>
+                        <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+                    </div>
 
+                </div>
             </div>
-        </div>
-    </header>
-</div>
-<div id="Content">
-    <div class="content_wrapper clearfix">
-        <div class="sections_group">
-            <div class="entry-content">
-                <div class="section mcb-section" style="padding-top:110px; padding-bottom:50px;">
-                    <div class="section_wrapper mcb-section-inner">
-                        <div class="wrap mcb-wrap one  valign-top clearfix">
-                            <div class="mcb-wrap-inner">
-                                <div class="column mcb-column two-third column_column ">
-                                    <div class="column_attr clearfix" style=" padding:0 7% 0 0;">
-                                        <h6 style="letter-spacing: 4px;">LA HISTORIA</h6>
-                                        <h2>Nuestros Inicios</h2>
-                                        <hr class="no_line" style="margin: 0 auto 20px">
-                                        <h6>
-                                        	Los sabores, formas y texturas que conforman nuestra carta son el resultado de la pasión y larga experiencia en la industria gastronómica de Rodrigo Estrada director general y copropietario, así como el compromiso y dedicación de nuestros chefs de cocina Ismael Sánchez y Octavio Ortega. Gracias a este trabajo en conjunto, hemos elaborado una carta auténtica con sabores inimaginables, con productos de la mejor y mas alta calidad, siempre cuidando y respetando el sabor de la tradicional gastronomía latinoamericana.
-                                        </h6>
+        </header>
+    </div>
+    <div id="Content">
+        <div class="content_wrapper clearfix">
+            <div class="sections_group">
+                <div class="entry-content">
+                    <div class="section mcb-section" style="padding-top:110px; padding-bottom:50px;">
+                        <div class="section_wrapper mcb-section-inner">
+                            <div class="wrap mcb-wrap one  valign-top clearfix">
+                                <div class="mcb-wrap-inner">
+                                    <div class="column mcb-column one column_column ">
+                                        <div class="column_attr clearfix">
+                                            <h6 style="letter-spacing: 4px;">LA HISTORIA</h6>
+                                            <h2>Nuestros Inicios</h2>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="column mcb-column one-third column_column ">
-                                    <div class="column_attr clearfix">
-                                        <h6 style="letter-spacing: 4px;">NUESTRA GASTRONÓMIA</h6>
-                                        <p>
-                                            "No creo que seamos una <em>nueva propuesta</em>
-                                            o un <em>concepto diferente</em>” comenta, “En nuestro caso, nos preocupamos por la calidad de nuestros ingredientes, la frescura y a la pasión con la que hacemos las cosas".
-                                            
-                                        </p>
-                                        <hr class="no_line" style="margin: 0 auto 20px">
-                                        <h6 style="letter-spacing: 4px;">CONCEPTO</h6>
-                                        <p>
-                                            <strong>Rodrigo Estrada</strong>, chef y socio del restaurante <strong>Agua & Sal</strong> en Polanco, define la cocina del lugar como “cocina latina del mar”.
-                                        </p>
+                                    <div class="column mcb-column one-second column_column ">
+                                        <div class="column_attr clearfix" style=" padding:0 7% 0 0;">
+                                            <h6>
+                                            	El camino que trajo a Rodrigo Estrada a la avenida más concurrida de la Ciudad de México tiene curvas.
+                                            </h6>
+                                            <p>
+                                                Una historia que relata con honestidad y orgullo en la mirada. Como joven adulto y con un diploma en administración de empresas turísticas bajo el brazo, dio sus primeros pasos a cargo de la recepción y banquetes en el Hotel & Garden Restaurant Las Mañanitas, un Relais & Châteaux en Cuernavaca. Más adelante, lo recibieron las aguas cristalinas de la Riviera Maya en un hotel de cadena alemana y, 3 años después, le ofrecieron la coordinación de ventas en una empresa ajena al turismo que no pudo ni debía rechazar. Gracias a ello recorrería su patria de punta a punta, probando a deleite las cocinas de cada región.
+                                            </p>
+                                            <p>
+                                                En el 2002 lo contrataron como gerente en Colibri un bistro de cocina mexicana en San Francisco posteriormente en el 2005 viene Fresca, un restaurante peruano. El reto le pareció interesante y la comida extraordinaria. Halló en sus platillos similitudes con la mexicana y a la vez combinaciones desconocidas, fruto de la fusión cultural que ocurrió en el Perú a lo largo de su historia. Habiendo adquirido experiencia en la preparación del cebiche, el estandarte de la gastronomía peruana por excelencia, comenzó a dibujarse en su mente un nuevo objetivo: trabajar en La Mar, de Gastón Acurio, como gerente general. En un día llegaban a servir hasta 800 personas, un desafío que emprendió con gran humildad y respeto. Para cuando decide finalmente volver a casa, lo hace con un bagaje de sabores y experiencias que definirían con precisión su actual y más preciado proyecto.
+                                            </p>
+                                            <p>
+                                                Como mexicano nunca se hubiera atrevido a poner un restaurante de comida peruana, pero lo aprendido en San Francisco le dio la seguridad para imaginar un menú que rindiera homenaje a los pueblos pescadores de América Latina. Los primeros años de Agua y Sal fueron sin duda difíciles, pero con el tiempo entendieron que lejos de restarles, la adversidad del inicio los obligó a ganarse con calidad y autenticidad una reputación hoy en día intachable.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="column mcb-column one-second column_column ">
+                                        <div class="column_attr clearfix" style=" padding:0 7% 0 0;">
+                                            <p>
+                                                La especialidad de la casa son los cebiches. Nos recomiendan el Tropical, que lleva camarón y trozos de mango en salsa de piña y chile cuaresmeño, cebolla morada, cacahuate, aceite de ajonjolí y sal de Maldon. El Mixto es camarón, pulpo y pesca del día, en salsa de ají amarillo. Lo acompañan con camote, granos de elote y maíz frito, o cancha, cebolla morada y una pizca de sal rosa del Himalaya. El Peruano es la pesca del día en leche de tigre clásica, chile habanero y cebolla morada, con choclo, cancha y camote, y un toque de sal rosada de los Andes peruanos. 
+                                            </p>
+                                            <p>
+                                                El Tatemado incluye camarón, pulpo y pesca del día, en salsa de chile chilhuacle tatemado, yuzu, cebolla cambray, aguacate, rábano sandía y sal negra de Hawái.
+                                            </p>
+                                            <p>
+                                                La Ciudad de México es un monstruo que devora a los que pretenden conquistarla sin estar preparados. Su inmensa oferta gastronómica hace de un comensal insatisfecho un comensal perdido, y eso Rodrigo lo tiene muy claro. Es un romántico que no busca replicar Agua y Sal bajo ninguna circunstancia, sino más bien dignificar su restaurante con arduo trabajo para posicionarlo en un futuro cercano, como el Pujol o el Quintonil de la cocina del mar.<br />
+                                                <small class="short">
+                                                    Texto: Guénola Bally | Fuente: Plate Selector
+                                                </small>
+                                            </p>
+                                            <h6 style="letter-spacing: 4px;">NUESTRA GASTRONÓMIA</h6>
+                                            <p>
+                                                "No creo que seamos una <em>nueva propuesta</em>
+                                                o un <em>concepto diferente</em>” comenta, “En nuestro caso, nos preocupamos por la calidad de nuestros ingredientes, la frescura y a la pasión con la que hacemos las cosas".
+                                            </p>
+                                            <hr class="no_line" style="margin: 0 auto 20px">
+                                            <h6 style="letter-spacing: 4px;">CONCEPTO</h6>
+                                            <p>
+                                                <strong>Rodrigo Estrada</strong>, chef y socio del restaurante <strong>Agua & Sal</strong> en Polanco, define la cocina del lugar como “cocina latina del mar”.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="section mcb-section no-margin-h no-margin-v" style="padding-top:0px; padding-bottom:0px; background-image:url('{{asset('images/home_restaurant2_sectionbg4.jpg')}}'); background-repeat:no-repeat; background-position:center top;">
-                    <div class="section_wrapper mcb-section-inner">
-                        <div class="wrap mcb-wrap two-fifth  valign-top clearfix" style="padding:80px 5% 60px">
-                            <div class="mcb-wrap-inner">
-                                <div class="column mcb-column one column_column">
-                                    <div class="column_attr clearfix align_center">
-                                        <div class="image_frame image_item no_link scale-with-grid alignnone no_border">
-                                            <div class="image_wrapper"><img class="scale-with-grid" src="{{asset('images/ays-gal/logo-aguaysal-rec.png')}}" alt="Agua & Sal" width="230"/>
+                <div class="column mcb-column one column_portfolio portfolio_heading">
+                    <div class="section mcb-section" style="padding-top:50px; padding-bottom:50px;">
+                        <div class="section_wrapper mcb-section-inner">
+                            <div class="wrap mcb-wrap one  valign-top clearfix">
+                                <div class="mcb-wrap-inner">
+                                    <div class="column mcb-column one column_column ">
+                                        <div class="column_filters">
+                                            <div class="portfolio_wrapper isotope_wrapper">
+                                                <ul class="portfolio_group lm_wrapper isotope masonry col-3 masonry-hover">
+                                                <!-- interior -->
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail restaurant">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-dark" style=" background-color:rgba(0, 129, 168, .7);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Agua & Sal | Cocina Latinoaméricana del Mar</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom pescado" href="{{asset('images/ays-gal/interior-001.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="single-project-4.html"><img src="{{asset('images/ays-gal/interior-001.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail restaurant">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-dark" style=" background-color:rgba(0, 129, 168, .7);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Agua & Sal | Cocina Latinoaméricana del Mar</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom pescado" href="{{asset('images/ays-gal/interior-002.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="single-project-4.html"><img src="{{asset('images/ays-gal/interior-002.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail restaurant">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-dark" style=" background-color:rgba(0, 129, 168, .7);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Agua & Sal | Cocina Latinoaméricana del Mar</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom pescado" href="{{asset('images/ays-gal/interior-003.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="single-project-4.html"><img src="{{asset('images/ays-gal/interior-003.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail restaurant">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-dark" style=" background-color:rgba(0, 129, 168, .7);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Agua & Sal | Cocina Latinoaméricana del Mar</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom pescado" href="{{asset('images/ays-gal/interior-005.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="single-project-4.html"><img src="{{asset('images/ays-gal/interior-005.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail restaurant">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-dark" style=" background-color:rgba(0, 129, 168, .7);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Agua & Sal | Cocina Latinoaméricana del Mar</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom pescado" href="{{asset('images/ays-gal/exterior-001.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="single-project-4.html"><img src="{{asset('images/ays-gal/exterior-001.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="portfolio-item isotope-item category-masonry-hover  has-thumbnail restaurant">
+                                                        <div class="masonry-hover-wrapper">
+                                                            <div class="hover-desc bg-dark" style=" background-color:rgba(0, 129, 168, .7);">
+                                                                <div class="desc-inner">
+                                                                    <h3 class="entry-title" itemprop="headline">Agua & Sal | Cocina Latinoaméricana del Mar</h3>
+                                                                </div>
+                                                                <div class="links-wrappper clearfix">
+                                                                    <a class="zoom pescado" href="{{asset('images/ays-gal/exterior-002.jpg')}}" rel="prettyphoto[cebiches]"><i class="icon-search"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-wrapper scale-with-grid">
+                                                                <a class="link" href="single-project-4.html"><img src="{{asset('images/ays-gal/exterior-002.jpg')}}" class="scale-with-grid wp-post-image" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                <!-- end interior -->
                                             </div>
                                         </div>
-                                        <hr class="no_line" style="margin: 0 auto 40px">
-                                        <p>
-                                            Agua y Sal es una Cebichería de cocina latinoamericana que rinde un homenaje a los pueblos de pescadores de México, Centro, Sudamérica y el Caribe, con una selección de los mejores cebiches de sus costas.
-                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="wrap mcb-wrap three-fifth  valign-top clearfix">
-                            <div class="mcb-wrap-inner">
-                                <div class="column mcb-column one column_image ">
-                                    <div class="image_frame image_item no_link scale-with-grid aligncenter no_border">
-                                        <div class="image_wrapper"><img class="scale-with-grid" src="{{asset('images/ays-gal/pic-004.jpg')}}" alt="home_restaurant2_about2" width="780" height="730" />
+                    </div>
+                    <div class="section mcb-section no-margin-h no-margin-v" style="padding-top:0px; padding-bottom:0px; background-image:url('{{asset('images/ays-gal/ays-background-001.jpg')}}'); background-repeat:no-repeat; background-position: -140px top;">
+                        <div class="section_wrapper mcb-section-inner">
+                            <div class="wrap mcb-wrap two-fifth  valign-top clearfix" style="padding:80px 5% 60px; background-color: rgba(255,255,255,.8)">
+                                <div class="mcb-wrap-inner">
+                                    <div class="column mcb-column one column_column">
+                                        <div class="column_attr clearfix align_center">
+                                            <div class="image_frame image_item no_link scale-with-grid alignnone no_border">
+                                                <div class="image_wrapper"><img class="scale-with-grid" src="{{asset('images/ays-gal/logo-aguaysal-rec.png')}}" alt="Agua & Sal" width="230"/>
+                                                </div>
+                                            </div>
+                                            <hr class="no_line" style="margin: 0 auto 40px">
+                                            <p>
+                                                <strong>Agua y Sal</strong> es una Cebichería de cocina latinoamericana que rinde un homenaje a los pueblos de pescadores de México, Centro, Sudamérica y el Caribe, con una selección de los mejores cebiches de sus costas.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wrap mcb-wrap three-fifth  valign-top clearfix">
+                                <div class="mcb-wrap-inner">
+                                    <div class="column mcb-column one column_image ">
+                                        <div class="image_frame image_item no_link scale-with-grid aligncenter no_border">
+                                            <div class="image_wrapper"><img class="scale-with-grid" src="{{asset('images/ays-gal/pic-004.jpg')}}" alt="home_restaurant2_about2" width="780" height="730" />
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="section mcb-section no-margin-h no-margin-v  " style="padding-top:0px; padding-bottom:230px; background-image:url('{{asset('images/home_restaurant2_sectionbg5.jpg')}}'); background-repeat:no-repeat; background-position:center bottom;">
-                    <div class="section_wrapper mcb-section-inner">
-                        <div class="wrap mcb-wrap one-second  valign-top clearfix" style="margin-top:-60px">
-                            <div class="mcb-wrap-inner">
-                                <div class="column mcb-column one column_image ">
-                                    <div class="image_frame image_item no_link scale-with-grid aligncenter no_border">
-                                        <div class="image_wrapper"><img class="scale-with-grid" src="{{asset('images/ays-gal/pic-005.jpg')}}" alt="home_restaurant2_about3" width="780" height="1200" />
+                    <div class="section mcb-section no-margin-h no-margin-v  " style="padding-top:0px; padding-bottom:230px; background-image:url('{{asset('images/ays-gal/ays-background-002.jpg')}}'); background-repeat:no-repeat; background-position:center bottom;">
+                        <div class="section_wrapper mcb-section-inner">
+                            <div class="wrap mcb-wrap one-second  valign-top clearfix" style="margin-top:-60px">
+                                <div class="mcb-wrap-inner">
+                                    <div class="column mcb-column one column_image ">
+                                        <div class="image_frame image_item no_link scale-with-grid aligncenter no_border">
+                                            <div class="image_wrapper"><img class="scale-with-grid" src="{{asset('images/ays-gal/pic-006.jpg')}}" alt="home_restaurant2_about3" width="780" height="1200" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wrap mcb-wrap one-second  valign-top clearfix" style="padding:70px 60px; background-color:#ffffff">
+                                <div class="mcb-wrap-inner">
+                                    <div class="column mcb-column one column_column">
+                                        <div class="column_attr clearfix align_center">
+                                            <h2>Cocina Latina<br />
+                                            	del Mar</h2>
+                                            <hr class="no_line" style="margin: 0 auto 15px">
+                                            <h6><strong>Agua y Sal</strong> está ubicado en la esquina de la avenida Campos Elíseos y la calle Temístocles en la exclusiva zona hotelera de la colonia Polanco en la Ciudad de México. </h6>
+                                            <hr class="no_line" style="margin: 0 auto 20px">
+                                            <a href="{{url('contacto')}}" class="button  button_size_2 button_js" href="#"><span class="button_label">Contacto</span></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="wrap mcb-wrap one-second  valign-top clearfix" style="padding:70px 60px; background-color:#ffffff">
-                            <div class="mcb-wrap-inner">
-                                <div class="column mcb-column one column_column">
-                                    <div class="column_attr clearfix align_center">
-                                        <h2>Cocina Latina<br />
-                                        	del Mar</h2>
-                                        <hr class="no_line" style="margin: 0 auto 15px">
-                                        <h6><strong>Agua & Sal</strong> esta localizado en el numero 199 de la avenida Campos Elíseos en la esquina de Temístocles en la colonia Polanco. Frente al Hotel Hyatt Regency (antes Nikko) en la exclusiva zona hotelera de esta colonia en la Ciudad de México D.F.</h6>
-                                        <hr class="no_line" style="margin: 0 auto 20px">
-                                        <a href="{{url('contactenos')}}" class="button  button_size_2 button_js" href="#"><span class="button_label">Contáctenos</span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                </div>
 
+                </div>
             </div>
         </div>
     </div>
-</div>
 {% endblock %}
 {% block js %}
 	<script src="{{asset('js/jquery-2.1.4.min.js')}}"></script>
@@ -193,5 +334,5 @@
                 }
             });
             /*]]>*/
-        </script>
+    </script>
 {% endblock %}	

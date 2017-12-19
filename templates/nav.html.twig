@@ -6,7 +6,7 @@
     <nav id="menu">
         <ul id="menu-main-menu-left" class="menu menu_left">
             <li {% if active == 'inicio' %} class="current_page_item"{% endif %}>
-                <a href="{{url('inicio')}}"><span>Home</span></a>
+                <a href="{{url('inicio')}}"><span>Inicio</span></a>
             </li>
             <li {% if active == 'nosotros' %} class="current_page_item"{% endif %}>
                 <a href="{{url('nosotros')}}"><span>Nosotros</span></a>
@@ -14,16 +14,23 @@
             <li {% if active == 'especialidades' %} class="current_page_item"{% endif %}>
                 <a href="{{url('especialidades')}}"><span>Especialidades</span></a>
             </li>
+            <li {% if active == 'menu' %} class="current_page_item"{% endif %}>
+                <a href="{{url('menu')}}"><span>Menú</span></a>
+            </li>
+            
         </ul>
         <ul id="menu-main-menu-right" class="menu menu_right">
-            <li {% if active == 'menu' %} class="current_page_item"{% endif %}>
-                <a href="{{url('menu')}}"><span>Menu</span></a>
+            <li {% if active == 'galeria' %} class="current_page_item"{% endif %}>
+                <a href="{{url('galeria')}}"><span>Galería</span></a>
             </li>
-            <li  {% if active == 'testimoniales' %} class="current_page_item"{% endif %}>
-                <a href="{{url('inicio')}}"><span>Testimoniales</span></a>
+            <li {% if active == 'colaboradores' %} class="current_page_item"{% endif %}>
+                <a href="{{url('colaboradores')}}"><span>Colaboradores</span></a>
             </li>
-            <li {% if active == 'contactenos' %} class="current_page_item"{% endif %}>
-                <a href="{{url('contactenos')}}"><span>Contéctenos</span></a>
+            <li  {% if active == 'prensa' %} class="current_page_item"{% endif %}>
+                <a href="{{url('prensa')}}"><span>Prensa</span></a>
+            </li>
+            <li {% if active == 'contacto' %} class="current_page_item"{% endif %}>
+                <a href="{{url('contacto')}}"><span>Contacto</span></a>
             </li>
         </ul>
     </nav><a class="responsive-menu-toggle " href="#"><i class="icon-menu-fine"></i></a>
