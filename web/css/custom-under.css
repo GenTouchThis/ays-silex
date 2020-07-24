@@ -1,0 +1,282 @@
+/* your styles go here */
+body{
+	font-family: 'Raleway', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+}
+
+.divider-lg{
+	padding: 45px 0;
+}
+
+.const h1{
+	color: #C3DB75;
+	font-size: 30px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+
+.const h2 {
+	font-size: 25px;
+	letter-spacing: 5px;
+}
+
+.main {
+    background-size: cover;
+}
+.main {
+	background: rgba(5,7,10,0.64);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(5,7,10,0.64) 0%, rgba(0,0,0,0.78) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(5,7,10,0.64)), color-stop(100%, rgba(0,0,0,0.78)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(5,7,10,0.64) 0%, rgba(0,0,0,0.78) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(5,7,10,0.64) 0%, rgba(0,0,0,0.78) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(5,7,10,0.64) 0%, rgba(0,0,0,0.78) 100%);
+	background: radial-gradient(ellipse at center, rgba(5,7,10,0.64) 0%, rgba(0,0,0,0.78) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05070a', endColorstr='#000000', GradientType=1 );
+	padding-top: 5%;
+}
+
+.main .cursive{
+	margin-top: 200px;
+    font-size: 60px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+p.social {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p.social a {
+    margin: 0 10px 0 0;
+    color: #fff;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    line-height: 32px;
+    font-size: 20px;
+    text-align: center;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    vertical-align: bottom;
+}
+
+p.social a.facebook{
+    background-color:#4460ae
+}
+p.social a.gplus{
+    background-color:#c21f25
+}
+p.social a.twitter{
+    background-color:#3cf
+}
+p.social a.instagram{
+    background-color:#cd4378
+}
+p.social a.email{
+    background-color:#4a7f45
+}
+
+.footer {
+	font-size: 11px;
+	letter-spacing: 1px;
+    padding: 20px;
+}
+
+.footer p.credit {
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.footer a {
+	color: #64B5F6;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #e57373;
+    text-decoration: none;
+}
+
+/* modal portfolio */
+
+.modal-content{
+  background: url(../images/voidBlack.png);
+}
+
+.modal-content h2{
+  font-family: 'Cinzel', serif;
+  font-size: 16px;
+  color: #7CD740;
+}
+
+.modal-content p{
+  font-size: 13px;
+  font-style: italic;
+  color: #E6F1F7;
+}
+.portfolio-modal .modal-content iframe {
+    margin-bottom: 10px;
+}
+
+.portfolio-modal .modal-content {
+    padding: 100px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.portfolio-modal .modal-content h2 {
+    margin-bottom: 15px;
+    font-size: 3em;
+}
+
+.portfolio-modal .modal-content p {
+    margin-bottom: 30px;
+}
+
+.portfolio-modal .modal-content p.item-intro {
+    margin: 20px 0 30px;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.portfolio-modal .modal-content ul.list-inline {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.portfolio-modal .modal-content img {
+    margin-bottom: 30px;
+    border: 2px solid #000;
+    width: 80%;
+}
+
+.portfolio-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.portfolio-modal .close-modal:hover {
+    opacity: .3;
+}
+
+.portfolio-modal .close-modal .lr {
+    z-index: 1051;
+    width: 2px;
+    height: 50px;
+    margin-left: 35px;
+    background-color: #FFF;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.portfolio-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 2px;
+    height: 50px;
+    background-color: #FFF;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.portfolio-modal .modal-backdrop {
+    display: none;
+    opacity: 0;
+}
+
+.food-menu-bg {
+    background: url(../img/menu-bg.jpg);
+    background-position: top center;
+    background-size: 100%;
+}
+
+.food-menu {
+    font-family: 'Libre Baskerville', serif;
+    padding: 50px 0;
+} 
+
+.food-menu h1{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 34px;
+    color: #017397;
+    text-transform: uppercase;
+} 
+
+
+.food-menu h2{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 25px;
+    letter-spacing: -1px;
+    color: #017397;
+    text-transform: uppercase;
+    padding: 35px 0 0 0; 
+} 
+
+.food-menu h3{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 18px;
+    color: #017397;
+    text-transform: uppercase;
+} 
+
+.subtitle {
+    font-family: 'Libre Baskerville', serif;
+    margin: 4em 0;
+   
+}
+
+.fancy {
+  
+  text-align: center;
+}
+.fancy span {
+    line-height: 0.5;
+    font-size: 24px;
+    display: inline-block;
+    position: relative; 
+    color: #017397; 
+    padding-bottom: 17px;
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid #017397;
+  border-top: 1px solid #017397;
+  top: 0;
+  width: 400px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+.square {
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px dotted #017397;
+}

@@ -2,7 +2,7 @@
 |-------------------------------------------------------------------------
 | Be
 | Global style
-| version 4.4
+| version 4.7
 | http://BeantownThemes.com
 | http://themeforest.net/user/BeantownThemes
 |--------------------------------------------------------------------------
@@ -12871,3 +12871,20 @@ dl > dt,.dark dl > dd,.dark .article_box .desc_wrapper p,.dark a.icon_bar,.dark 
 	#Filters .filters_wrapper ul li a{-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
 
 	
+.portfolio_slider_ul, ul.testimonials-slider {
+	background: none !important;
+}
+.portfolio_slider_ul li, ul.testimonials-slider>* {
+	visibility: visible !important;
+} 
+a#back_to_top.button .button_icon {
+    padding: 2px 7px;
+}
+
+.content_slider .content_slider_ul.carouFredSel{opacity:1;}
+
+/* Code Hightlighter ----------------------------------------------------------------- */
+code,pre,q{font-family:Consolas,monospace!important;border:1px solid #e8e8e8;background:#fff;-webkit-border-radius:3px;border-radius:3px;}
+code,q{padding:2px 4px;white-space:nowrap;margin:0 2px;color:#2991d6}
+pre{padding:21px 15px 20px;margin:15px 0;display:block;line-height:21px!important;background:#fff;background:-moz-linear-gradient(top,#fff 50%,#fafafa 50%);background:-webkit-linear-gradient(top,#fff 50%,#fafafa 50%);background:-o-linear-gradient(top,#fff 50%,#fafafa 50%);background:linear-gradient(top,#fff 50%,#fafafa 50%);background-size:42px 42px;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;}
+code p,pre p{margin-bottom:0!important}
