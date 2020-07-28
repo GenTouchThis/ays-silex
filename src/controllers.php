@@ -24,13 +24,29 @@ $app->get('/menu', function () use ($app) {
     return $app['twig']->render('pages/menu.html.twig', array());
 })->bind('menu');
 
-$app->get('/testimoniales', function () use ($app) {
-    return $app['twig']->render('pages/testimoniales.html.twig', array());
-})->bind('testimoniales');
+$app->get('/licores', function () use ($app) {
+    return $app['twig']->render('pages/licores.html.twig', array());
+})->bind('licores');
 
-$app->get('/contactenos', function () use ($app) {
-    return $app['twig']->render('pages/contactenos.html.twig', array());
-})->bind('contactenos');
+$app->get('/postres', function () use ($app) {
+    return $app['twig']->render('pages/postres.html.twig', array());
+})->bind('postres');
+
+$app->get('/prensa', function () use ($app) {
+    return $app['twig']->render('pages/prensa.html.twig', array());
+})->bind('prensa');
+
+$app->get('/galeria', function () use ($app) {
+    return $app['twig']->render('pages/galeria.html.twig', array());
+})->bind('galeria');
+
+$app->get('/colaboradores', function () use ($app) {
+    return $app['twig']->render('pages/colaboradores.html.twig', array());
+})->bind('colaboradores');
+
+$app->get('/contacto', function () use ($app) {
+    return $app['twig']->render('pages/contacto.html.twig', array());
+})->bind('contacto');
 
 $app->before(function ($request) use ($app) {
     $app['twig']->addGlobal('active', $request->get("_route"));
