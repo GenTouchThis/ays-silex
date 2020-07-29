@@ -14,10 +14,14 @@
             <li {% if active == 'especialidades' %} class="current_page_item"{% endif %}>
                 <a href="{{url('especialidades')}}"><span>Especialidades</span></a>
             </li>
-            <li {% if active == 'menu' %} class="current_page_item"{% endif %}>
+            <li {% if active == 'menu' %} class="current_page_item submenu"{% endif %}>
                 <a href="{{url('menu')}}"><span>Menú</span></a>
-            </li>
-            
+                <ul class="submenu" style="display: none;">
+                    <li style="list-style: none; padding: 0;margin: 0; font-size: 12px; text-align: left"><a href="{{url('menu')}}">&middot; Nuestro Menú</a></li>
+                    <li style="list-style: none; padding: 0;margin: 0; font-size: 12px; text-align: left"><a href="{{url('licores')}}">&middot; Bebidas</a></li>
+                    <li style="list-style: none; padding: 0;margin: 0; font-size: 12px; text-align: left"><a href="{{url('postres')}}">&middot; Postres</a></li>
+                </ul>
+            </li>            
         </ul>
         <ul id="menu-main-menu-right" class="menu menu_right">
             <li {% if active == 'galeria' %} class="current_page_item"{% endif %}>
